@@ -19,7 +19,11 @@ function App() {
   return (
     <div className="orders">
       <h1>Orders</h1>
-      <p>You've ordered {orderItems.length} {orderItems[0]}</p>
+      { orderItems.length ? 
+        <p>You've ordered {orderItems.length} {orderItems[0]}</p>
+        :
+        <p>You haven't ordered anything!</p>
+      }
     </div>
   );
 }
