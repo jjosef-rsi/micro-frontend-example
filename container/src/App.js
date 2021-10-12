@@ -4,8 +4,11 @@ function App() {
 
   return (
     <div className="App">
-      <MicroFE name="Menu" host="http://localhost:3001" />
-      <MicroFE name="Orders" host="http://localhost:3002" />
+      <h1>Container</h1>
+      <div>
+        <MicroFE name="Menu" host="http://localhost:3001" />
+        <MicroFE name="Orders" host="http://localhost:3002" />
+      </div>
     </div>
   );
 }
